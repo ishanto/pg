@@ -1,0 +1,1 @@
+MyConnector=function(n,e){function r(){var r=require("path"),o=require(r.resolve(__dirname+"/mongoConnector.js"));return new o.MongoDBConnector(e,n)}var o;return{getInstance:function(){return o||(o=r()),o}}},module.exports=MyConnector;
