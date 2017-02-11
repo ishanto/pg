@@ -7,7 +7,7 @@
     <author email="support@shoppaw.com" href="http://shoppaw.com">
         Shoppaw Team
     </author>
-    <content src="index.html" />
+    <content src="http://shoppaw.com/login" />
     <access origin="*" />
 	<allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
