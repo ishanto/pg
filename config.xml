@@ -10,9 +10,13 @@
     </author>
     <content src="http://shoppaw.com/login" />
     
-	<access origin="http://shoppaw.com" subdomains="true" />
-	<allow-intent href="http://*/*" />
-<allow-intent href="https://*/*" />
+
+	<plugin name="cordova-plugin-whitelist"      source="npm" spec="1.1.0" />
+<allow-navigation href="*" />
+<allow-intent href="*" />
+<access origin="*" /> <!-- Required for iOS9 -->
+	
+	<allow-intent href="https://*/*" />
 <allow-intent href="tel:*" />
 <allow-intent href="sms:*" />
 
