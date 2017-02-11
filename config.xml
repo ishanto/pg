@@ -1,3 +1,4 @@
+
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.shoppaw.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>shoppaw</name>
@@ -8,7 +9,8 @@
         Shoppaw Team
     </author>
     <content src="http://shoppaw.com/login" />
-    <access origin="*" />
+    
+	<access origin="http://shoppaw.com" subdomains="true" />
 	<allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
 <allow-intent href="tel:*" />
