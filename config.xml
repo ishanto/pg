@@ -9,7 +9,7 @@
     </author>
     <content src="http://shoppaw.com/login" />
     
-
+<preference name="phonegap-version" value="cli-5.2.0" />
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
 <allow-navigation href="*" />
 <allow-intent href="*" />
