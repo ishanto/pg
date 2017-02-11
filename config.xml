@@ -8,7 +8,7 @@
         Shoppaw Team
     </author>
     <content src="index.html" />
-    <access origin="http://shoppaw.com" />
+    <access origin="*" />
 	<allow-intent href="http://*/*" />
 <allow-intent href="https://*/*" />
 <allow-intent href="tel:*" />
