@@ -10,7 +10,7 @@
     <content src="http://shoppaw.com/login" />
     
 
-	<!--<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />-->
+	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
 <allow-navigation href="*" />
 <allow-intent href="*" />
 <access origin="*" /> <!-- Required for iOS9 -->
