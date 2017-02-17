@@ -1,5 +1,17 @@
 @charset "utf-8";
 /* ss page loder css */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/logo-sm.gif) center no-repeat #fff;
+}
 
 
 /* ss common css */
@@ -34,6 +46,21 @@ body .btn-info:hover{ background-color: #9e200b;  border-color: #db371c;}
 /*....ss header css....*/
 header{ background:#fff;}
 
+.form-error{
+  font-size: large;
+background: rgba(214, 7, 53, 0.89);
+border-radius: 6px 6px 6px 6px;
+color: #f1f1f1;
+margin-bottom: 12px;
+}
+
+.form-response{
+      font-size: large;
+      background: rgba(149, 204, 194, 0.89);
+      border-radius: 6px 6px 6px 6px;
+      color: #042e90;
+      margin-bottom: 12px;
+}
 
 /*.....login ....*/
 
@@ -133,12 +160,12 @@ header{ background:#fff;}
     -moz-transition: -moz-border-radius 0.5s ease-in;
     -o-transition: border-radius 0.5s ease-in;
     -ms-transition: border-radius 0.5s ease-in;
-    transition: border-radius 0.5s ease-in;}	
-	
+    transition: border-radius 0.5s ease-in;}
+
 .menu_list a span{ display:block; margin:10px 0px;}
 .menu_list > div{ margin-bottom:15px; margin-top:15px; }
 #myTabContent form{ padding:20px 0px;}
-.menu_list a img{ 
+.menu_list a img{
 	width:128px;
 	height:128px;
 -webkit-box-sizing: border-box;
@@ -153,7 +180,7 @@ transition: all 1s ease; width:128px; overflow:hidden;}
 .menu_list a:hover img{
 	width:140px;
 	height:140px;
- 
+
     }
 .menu_list a:hover{background:#fff; }
 .scan_code_area .form-group{ overflow:hidden;}
@@ -182,7 +209,7 @@ transition: all 1s ease; width:128px; overflow:hidden;}
 }
 
 .icon-addon.addon-md .glyphicon,
-.icon-addon .glyphicon, 
+.icon-addon .glyphicon,
 .icon-addon.addon-md .fa,
 .icon-addon .fa {
     position: absolute;
@@ -252,7 +279,7 @@ body .mc-cycle{ width:100% !important;}
 }
 
 .drop-box {
-	
+
     width: 100%;
     height:100%;
     text-align: center;
@@ -271,3 +298,8 @@ body .mc-cycle{ width:100% !important;}
 #store_search table tr:nth-child(even), #customer_search table tr:nth-child(even) { background:#f1f1f1;}
 #store_search input, #customer_search input{ width:100%; margin-bottom:10px; line-height:24px;}
 
+
+ @media only screen and (max-width: 500px) {
+.bottm_area > div{ width:100%; float:none; margin-bottom:10px;}
+
+}
