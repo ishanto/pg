@@ -45,6 +45,7 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
 
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
+	<preference name="android-build-tool" value="gradle" />
 	
 <allow-navigation href="*" />
 <allow-intent href="*" />
