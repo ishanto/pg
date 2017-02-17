@@ -11,7 +11,13 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 
-		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5FQNMGN');</script>
+		<!-- End Google Tag Manager -->
 
   <title>.:: SHOPPAW :: Reward Yourself ::.</title>
 
@@ -39,13 +45,14 @@
 
 
 <body ng-controller="hosontoCtrl">
+
 	 <!-- ng-init="pushData(null,'autoLoadData','');"> -->
 
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FQNMGN"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
+<div class="loader"></div>
 <div id="hosonto_wrapper">
 		<div id="maximage">
             <div><img src="img/large/1.jpg" alt="" /></div>
@@ -74,6 +81,7 @@
 							</select>
 
 							<input type="text" placeholder="Login Name" ng-model="reg_username" mdl-param="reg_username"/>
+
 <div class="form-error" ng-show="username__error.length > 0" aria-describedby="sizing-addon3" ng-model="username__error" mdl-param="username__error">{{username__error}}</div>
 
 							<input type="tel" placeholder="Mobile Number" ng-model="reg_mobile" mdl-param="reg_mobile"/>
@@ -122,7 +130,17 @@
 
 
     <script>
+
+		jQuery(document).ready(function(){
+		jQuery(window).load(function() {
+			//alert('loaded');
+		jQuery(".loader").fadeOut("slow");
+	});
+});
+
+
 	jQuery(document).ready(function(){
+
 		jQuery('.message a').click(function(){
    jQuery('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
@@ -172,8 +190,8 @@ function myFunction() {
     </script>
 
 
-	<script src="js/lib/angular.min.js"></script>
-	<script src="js/lib/angular-route.min.js"></script>
+	<script src="js/lib/angular.js"></script>
+	<script src="js/lib/angular-route.js"></script>
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script> -->
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular-route.min.js"></script> -->
 
@@ -186,11 +204,9 @@ function myFunction() {
 <script type='text/javascript' src='js/lib/ng-infinite-scroll.min.js'></script>
 <script src="js/lib/ng-file-upload.js"></script>
 
-<script src="cordova.js"></script>
-	
-<script src="js/hosonto/app.js"></script>
-<script src="js/hosonto/hosonto_controller.js"></script>
-<script src="js/hosonto/controllers/pageCtrl.js"></script>
+<script src="/js/hosonto/app.js"></script>
+<script src="/js/hosonto/hosonto_controller.js"></script>
+<script src="/js/hosonto/controllers/pageCtrl.js"></script>
 
 
 </body>
