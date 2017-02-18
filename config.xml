@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<widget id="com.shoppaw.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.shoppaw.app" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 
     <name>shoppaw</name>
 
@@ -24,11 +24,15 @@
 
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
 
-<allow-navigation href="https://*.shoppaw.com" />
+<allow-navigation href="*" />
 
 <allow-intent href="*" />
 
-<access origin="https://*.shoppaw.com" /> <!-- Required for iOS9 -->
+<access origin="*" /> 
+	
+	<allow-intent href="https://*/*" />
+
+	<!-- Required for iOS9 -->
 
 	<!--
 
