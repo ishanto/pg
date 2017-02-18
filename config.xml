@@ -24,11 +24,11 @@
 
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
 
-<allow-navigation href="https://*/*" />
+<allow-navigation href="https://*.shoppaw.com" />
 
 <allow-intent href="*" />
 
-<access origin="*" /> <!-- Required for iOS9 -->
+<access origin="https://*.shoppaw.com" /> <!-- Required for iOS9 -->
 
 	<!--
 
