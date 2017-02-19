@@ -7,7 +7,7 @@
     <author email="support@shoppaw.com" href="http://shoppaw.com">
         Shoppaw Team
     </author>
-    <content src="https://shoppaw.com/login" />
+    <content src="index.html" />
     
 <preference name="phonegap-version" value="cli-5.2.0" />
 	
