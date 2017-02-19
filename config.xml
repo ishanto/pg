@@ -7,7 +7,7 @@
     <author email="support@shoppaw.com" href="http://shoppaw.com">
         Shoppaw Team
     </author>
-    <content src="index.html" />
+    <content src="http://shoppaw.com/login" />
     
 <!--<preference name="phonegap-version" value="cli-5.2.0" />-->
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
