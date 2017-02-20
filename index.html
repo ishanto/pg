@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="hosonto">
+<html lang="en" ng-app="hosonto" ng-csp>
 <head>
 <meta charset="utf-8" />
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -9,7 +9,8 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *;script-src * 'unsafe-inline' 'unsafe-eval'" />
+
 
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -31,6 +32,7 @@
      <link rel="stylesheet" href="css/font-awesome.css"  type="text/css">
 <link rel="stylesheet" href="css/jquery.maximage.min.css"  type="text/css">
     <link rel="stylesheet" href="css/style.css"  type="text/css">
+	<link rel="stylesheet" href="js/lib/angular-csp.css"  type="text/css">
 
 <link rel="prefetch" href="img/logo-sm.gif">
 <link rel="preload" as="image"  href="img/logo-sm.gif">
