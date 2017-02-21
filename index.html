@@ -73,40 +73,9 @@
 
     	<div class="login-page" ng-controller="pageCtrl">
           <div class="login_form">
-          	<div id="logo"><a href="http://shoppaw.com" target="_self"><img src="img/logo.png" alt="logo" /></a></div>
-						<form class="register-form" action="" method="post">
-
-							<select  ng-model="reg_role" mdl-param="reg_role" >
-								<option  disabled="disabled">Choose your role</option>
-								<option value="consumer" selected="selected">Consumers</option>
-								<option value="shop">Shop Admin</option>
-								<!-- <option>4</option> -->
-							</select>
-
-							<input type="text" placeholder="Login Name" ng-model="reg_username" mdl-param="reg_username"/>
-
-<div class="form-error" ng-show="username__error.length > 0" aria-describedby="sizing-addon3" ng-model="username__error" mdl-param="username__error">{{username__error}}</div>
-
-							<input type="tel" placeholder="Mobile Number" ng-model="reg_mobile" mdl-param="reg_mobile"/>
-<div class="form-error" ng-show="mobile__error.length > 0" aria-describedby="sizing-addon3" ng-model="mobile__error" mdl-param="mobile__error">{{mobile__error}}</div>
-
-
-							<input type="text" placeholder="email " ng-model="reg_email" mdl-param="reg_email"/>
-<div class="form-error" ng-show="password__error.length > 0" aria-describedby="sizing-addon3" ng-model="email__error" mdl-param="email__error">{{email__error}}</div>
-<div class="form-error" ng-show="mobile_email__error.length > 0" aria-describedby="sizing-addon3" ng-model="mobile_email__error" mdl-param="mobile_email__error">{{mobile_email__error}}</div>
-
-<input type="password" placeholder="password" ng-model="reg_password" mdl-param="reg_password"/>
-<div class="form-error" ng-show="password__error.length > 0" aria-describedby="sizing-addon3" ng-model="password__error" mdl-param="password__error">{{password__error}}</div>
-
-
-							<div ng-show="reg__error.length > 0" ng-model="reg__error" mdl-param="reg__error">{{reg__error}}</div>
-									<div ng-show="reg__status.length > 0" ng-model="reg__status" mdl-param="reg__status">{{reg__status}}</div>
-
-
-              <div class="ss_create_button" ng-click="pushData(null, 'executeEvent','BL.registerUser')">Create</div>
-              <p class="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
-            <form class="login-form" action="http://shoppaw.com/auth" method="post">
+          	<div id="logo"><a href="https://shoppaw.com" target="_self"><img src="img/logo.png" alt="logo" /></a></div>
+						
+            <form class="login-form" action="https://shoppaw.com/auth" method="post">
               <input type="text" class="form-control" placeholder="User Name" name="username" />
               <input type="password" class="form-control" placeholder="Password" name="password" />
 
@@ -115,7 +84,7 @@
 
               <!-- <button ng-click="pushData(null, 'executeEvent','BL.loginUser','',checkLogin)">login</button> -->
 							<button type="submit" name="submit">login</button>
-              <p class="message">Not registered? <a href="http://shoppaw.com/register">Create an account</a></p>
+              <p class="message">Not registered? <a href="https://shoppaw.com/register">Create an account</a></p>
             </form>
           </div>
         </div>
